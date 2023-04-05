@@ -1,0 +1,32 @@
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  transition: all .3s ease 0s;
+  color: #E4E5EA;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: rgba(252, 176, 69, 1);
+    transition: width .5s;
+  }
+
+  &:hover::after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: rgba(252, 176, 69, 1);
+    transition: width .5s;
+  }
+}
